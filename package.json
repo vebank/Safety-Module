@@ -1,0 +1,21 @@
+{
+  "name": "vebank-safety-module",
+  "version": "1.0.0",
+  "description": "VeBank Safety Module",
+  "main": "index.js",
+  "author": "vebank",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "dotenv": "^16.0.0",
+    "truffle": "^5.5.7"
+  },
+  "scripts": {
+    "test": "npx truffle test",
+    "develop": "nodemon -e js,sol --exec 'npx truffle test'",
+    "testnet": "npx truffle migrate --network testnet"
+  }
+}
